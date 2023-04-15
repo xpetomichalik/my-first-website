@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="prelader.css" />
+    
+    <link rel="stylesheet" href="feature.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/2574737594.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+   
+  <main>
+  <body>
+    <!-- <script src="main.js"></script> -->
+     <!-- <div id="preloader">
+      <div class="loading-text">
+        LOADING
+      </div> 
+    </div> -->
+    <div id="header">
+      
+      <div class="container">
+        
+        <nav>
+          <img src="./images/bebaswhite.png" style="width: 210px;">
+          
+          <ul class="menu container">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+            
+          </ul>
+          
+        </nav>
+      
+       
+        <div class="header-text">
+          
+          <h1>
+            <br />
+            <br />
+            hi,<br />
+            I am <span>peter</span>,<br />
+            A <span class="auto-type"></span> from slovakia
+          </h1>
+          <p>Self-Taught frontend web developer</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+    <!-- --------------about------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><img src="./images/logoo.jpg" /></div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span><br />Sctructuring websites</li>
+                <li><span>CSS</span><br />Styling websites</li>
+                <li>
+                  <span>JavaScript</span><br />Making websites interactive
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-present</span><br />Self-learning how to code
+                </li>
+                <li><span>2019-2021</span><br />TUKE</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021-present</span><br />geoinformatics - upjs</li>
+                <li><span>2018-2020</span><br />informatics - tuke</li>
+                <li><span>2013-2018</span><br />bilingual english gymnasium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------services------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web development</h2>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+            </p>
+            <a href="#"> learn more</a>
+          </div>
+            <div>
+              <i class="fa-solid fa-pencil"></i>
+              <h2>UI design</h2>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum
+              </p>
+              <a href="#"> learn more</a>
+            </div>
+              <div>
+                <i class="fa-solid fa-hand"></i>
+                <h2>Consultation </h2>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum
+                </p>
+                <a href="#">learn more</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- --------------------------portfolio---------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/login.png" >
+          <div class="layer">
+            <h3>simple Login form</h3>
+            <p>Simple login form used on webpage</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Screenshot_6.png">
+          <div class="layer">
+            <h3>recreated responsive webpage</h3>
+            <p>I recreated a responsive webpage for the game called "crave"</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Screenshot_5.png">
+          <div class="layer">
+            <h3>Simple guess my number game </h3>
+            <p>This is the simple guess game I created based on my udemy course</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Screenshot_1.png">
+          <div class="layer">
+            <h3>To-do list</h3>
+            <p>Functional To-do list with an option to store and remove tasks</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work" data-scale="1.6">
+          <img src="images/Screenshot_4.png">
+          <div class="layer">
+            <h3>Simple digital clock</h3>
+            <p>Digital themed clock using 12 hour clock format</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Screenshot_3.png">
+          <div class="layer">
+            <h3>Calendar</h3>
+            <p>A calendar with option to switch between light and dark mode</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Screenshot_7.png">
+          <div class="layer">
+            <h3>Calculator</h3>
+            <p>Fully working simple calculator</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+          
+          
+        
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- ------contact------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>michalik.peter99@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i>+421 944 445 869</p>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/peter-michal%C3%ADk-0182a0102/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/peto.mio/"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="https://github.com/xpetomichalik"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://twitter.com/mioofficial2"><i class="fa-brands fa-twitter-square"></i></a>
+          </div>
+          <a href="./images/cvxd.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="Email" placeholder="Your email" required>
+            <textarea name="Message" rows="5" placeholder="Your message" required></textarea>
+            <button type="submit" class="btn btn2">Send</button>
+            
+          </form>
+          <span id="msg"></span>
+        </div> 
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5712044.17051744!2d18.32754233981665!3d49.834709611504735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f209a723b433b%3A0x1ee89126081f62e0!2sBeniakova%201056%2F1%2C%20040%2018%20Kr%C3%A1sna!5e1!3m2!1ssk!2ssk!4v1680014911924!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="copyright">
+      <p></i>Copyright <i class="fa-solid fa-copyright"></i> Peter Michalik - Made by <b>michalik.code</b></p>
+    </div>
+  </div>
+  <script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+    function openTab(tabName) {
+      for (tabLink of tabLinks) {
+        tabLink.classList.remove("active-link");
+      }
+      for (tabContent of tabContents) {
+        tabContent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+
+  
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzBsGjaqCTvS9hbbuPgDRSJn1eeT_P7AL21ANLlkYOpKMAPJPYMgpxmYVdRQSujMGOV/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent succesfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 3000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>const backToTopButton = document.querySelector("#back-to-top-btn");
+
+    window.addEventListener("scroll", scrollFunction);
+    
+    function scrollFunction() {
+      if (window.pageYOffset > 300) { // Show backToTopButton
+        if(!backToTopButton.classList.contains("btnEntrance")) {
+          backToTopButton.classList.remove("btnExit");
+          backToTopButton.classList.add("btnEntrance");
+          backToTopButton.style.display = "block";
+        }
+      }
+      else { // Hide backToTopButton
+        if(backToTopButton.classList.contains("btnEntrance")) {
+          backToTopButton.classList.remove("btnEntrance");
+          backToTopButton.classList.add("btnExit");
+          setTimeout(function() {
+            backToTopButton.style.display = "none";
+          }, 250);
+        }
+      }
+    }
+    
+    backToTopButton.addEventListener("click", smoothScrollBackToTop);
+    
+    // function backToTop() {
+    //   window.scrollTo(0, 0);
+    // }
+    
+    function smoothScrollBackToTop() {
+      const targetPosition = 0;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 750;
+      let start = null;
+      
+      window.requestAnimationFrame(step);
+    
+      function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+        if (progress < duration) window.requestAnimationFrame(step);
+      }
+    }
+    
+    function easeInOutCubic(t, b, c, d) {
+      t /= d/2;
+      if (t < 1) return c/2*t*t*t + b;
+      t -= 2;
+      return c/2*(t*t*t + 2) + b;
+    };</script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings:["programmer","student","web-developer"],
+        typeSpeed: 70,
+        backSpeed: 70,
+        loop: true
+      })
+    </script>
+  </body>
+  </main>
+</html>
